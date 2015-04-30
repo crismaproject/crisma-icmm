@@ -1,0 +1,20 @@
+<settings>
+    <localRepository>/home/martin/icmm/lib/m2_v2</localRepository>
+	<servers><server>
+    <id>central-proxy</id>
+    <username>crisma</username>
+    <password>\{DESede\}Bc5tvu+UQwMTWhzMuiYzEEnANjmxYcmfp+FV2n4FRjWf10hLARXdWA==</password>
+</server><server>
+    <id>cismet-repo</id>
+    <username>crisma</username>
+    <password>\{DESede\}Bc5tvu+UQwMTWhzMuiYzEEnANjmxYcmfp+FV2n4FRjWf10hLARXdWA==</password>
+</server></servers>
+<mirrors>
+        <mirror>
+            <id>central-proxy</id>
+            <name>cismet-repo</name>
+            <url>https://repo.cismet.de/repo</url>
+            <mirrorOf>central</mirrorOf>
+        </mirror>
+    </mirrors>
+</settings>

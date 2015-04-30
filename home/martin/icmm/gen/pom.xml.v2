@@ -1,0 +1,74 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>de.cismet</groupId>
+        <artifactId>global-parent</artifactId>
+        <version>2.0</version>
+    </parent>
+
+    <groupId>de.cismet.cids.custom.crisma</groupId>
+    <artifactId>crisma-dist-new</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>cids Custom Crisma Distribution</name>
+    <description>Generates a cids distribution</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>de.cismet.cids</groupId>
+            <artifactId>cids-custom-crisma-server</artifactId>
+            <version>0.2.1</version>
+        </dependency>
+	<dependency>
+            <groupId>de.cismet.cids</groupId>
+            <artifactId>cids-server-rest</artifactId>
+            <version>0.1.2</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>de.cismet.cids</groupId>
+                <artifactId>cids-maven-plugin</artifactId>
+                <version>2.0.1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generate-lib</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <vendor>cismet</vendor>
+                    <homepage>http://www.cismet.de</homepage>
+                    <codebase>http://crisma.cismet.de/crismaDist_v2</codebase>
+                    <m2codebase>lib/m2_v2</m2codebase>
+                    <accountExtension>Crisma</accountExtension>
+                    <outputDirectory>../v2</outputDirectory>
+                    <dependencyConfiguration>
+                        <dependencyEx>
+                            <groupId>de.cismet.cids</groupId>
+                            <artifactId>cids-server-rest</artifactId>
+                            <generateJnlp>false</generateJnlp>
+                            <starterConfiguration>
+                                <mainClass>de.cismet.cids.server.rest.domain.Starter</mainClass>
+                            </starterConfiguration>
+                        </dependencyEx>
+                        <dependencyEx>
+                            <groupId>de.cismet.cids</groupId>
+                            <artifactId>cids-custom-crisma-server</artifactId>
+                            <generateJnlp>false</generateJnlp>
+                            <starterConfiguration>
+                                <mainClass>de.cismet.cids.server.rest.domain.Starter</mainClass>
+                            </starterConfiguration>
+                        </dependencyEx>
+                    </dependencyConfiguration>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

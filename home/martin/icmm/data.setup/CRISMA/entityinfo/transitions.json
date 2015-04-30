@@ -1,0 +1,76 @@
+{
+  "$self" : "/CRISMA.transitions",
+  "configuration" : {
+    "name" : "Transitions",
+    "policy" : "STANDARD",
+    "attributePolicy" : "STANDARD",
+    "pK_Field" : "id"
+  },
+  "attributes" : {
+    "id" : {
+      "$self" : "/CRISMA.transitions/id",
+      "name" : "id",
+      "position" : 0,
+      "javaclassname" : "java.lang.Integer"
+    },
+    "name" : {
+      "$self" : "/CRISMA.transitions/name",
+      "visible" : true,
+      "optional" : true,
+      "name" : "name",
+      "position" : 1,
+      "javaclassname" : "java.lang.String"
+    },
+    "description" : {
+      "$self" : "/CRISMA.transitions/description",
+      "visible" : true,
+      "optional" : true,
+      "name" : "description",
+      "position" : 2,
+      "javaclassname" : "java.lang.String"
+    },
+    "performedsimulation" : {
+      "$self" : "/CRISMA.transitions/performedsimulation",
+      "visible" : true,
+      "optional" : true,
+      "name" : "performedSimulation",
+      "position" : 4,
+      "foreignKey" : true,
+      "referenceType" : "/CRISMA.simulationdescriptors"
+    },
+    "simulationcontrolparameter" : {
+      "$self" : "/CRISMA.transitions/simulationcontrolparameter",
+      "visible" : true,
+      "optional" : true,
+      "name" : "simulationControlParameter",
+      "position" : 5,
+      "foreignKey" : true,
+      "referenceType" : "/CRISMA.dataitems"
+    },
+    "transitionstatuscontenttype" : {
+      "$self" : "/CRISMA.transitions/transitionstatuscontenttype",
+      "visible" : true,
+      "optional" : true,
+      "name" : "transitionStatusContentType",
+      "position" : 6,
+      "javaclassname" : "java.lang.String"
+    },
+    "transitionstatus" : {
+      "$self" : "/CRISMA.transitions/transitionstatus",
+      "visible" : true,
+      "optional" : true,
+      "name" : "transitionStatus",
+      "position" : 7,
+      "javaclassname" : "java.lang.String"
+    },
+    "performedmanipulations" : {
+      "$self" : "/CRISMA.transitions/performedmanipulations",
+      "visible" : true,
+      "array" : true,
+      "optional" : true,
+      "name" : "performedManipulations",
+      "position" : 8,
+      "referenceType" : "/CRISMA.manipulationdescriptors"
+    }
+  }
+}

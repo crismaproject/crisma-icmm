@@ -1,0 +1,24 @@
+{
+  "$self" : "/CRISMA.classifications",
+  "configuration" : {
+    "name" : "Classifications",
+    "policy" : "STANDARD",
+    "attributePolicy" : "STANDARD",
+    "pK_Field" : "id"
+  },
+  "attributes" : {
+    "id" : {
+      "$self" : "/CRISMA.classifications/id",
+      "name" : "id",
+      "position" : 0,
+      "javaclassname" : "java.lang.Integer"
+    },
+    "key" : {
+      "$self" : "/CRISMA.classifications/key",
+      "visible" : true,
+      "name" : "key",
+      "position" : 1,
+      "javaclassname" : "java.lang.String"
+    }
+  }
+}

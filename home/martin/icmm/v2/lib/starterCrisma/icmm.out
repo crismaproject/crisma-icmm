@@ -1,0 +1,52 @@
+port=9995
+swaggerpath=https://crisma-pilotEv1.ait.ac.at/icmm_api
+fs_cids_dir=/home/martin/icmm/crisma-api-pilot-e
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/martin/icmm/lib/m2_v2/org/slf4j/slf4j-log4j12/1.6.3/slf4j-log4j12-1.6.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/martin/icmm/lib/m2_v2/org/slf4j/slf4j-log4j12/1.7.6/slf4j-log4j12-1.7.6.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+log4j:WARN No appenders could be found for logger (com.wordnik.swagger.jaxrs.JaxrsApiReader$).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Server running non-interactive, use 'kill' to shutdown.
+Nov 11, 2014 12:02:56 PM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  de.cismet.cids.server.rest.domain
+  de.cismet.cids.server.rest.resourcelistings
+  com.fasterxml.jackson.jaxrs
+Nov 11, 2014 12:02:56 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Root resource classes found:
+  class de.cismet.cids.server.rest.resourcelistings.ApiListingResource
+  class de.cismet.cids.server.rest.resourcelistings.TheSearchesAPIResourceListing
+  class de.cismet.cids.server.rest.domain.ConfigAttributesAPI
+  class de.cismet.cids.server.rest.domain.PermissionsAPI
+  class de.cismet.cids.server.rest.resourcelistings.TheClassesAPIResourceListing
+  class de.cismet.cids.server.rest.resourcelistings.TheNodesAPIResourceListing
+  class de.cismet.cids.server.rest.resourcelistings.TheConfigAttributesResourceListing
+  class de.cismet.cids.server.rest.domain.EntitiesAPI
+  class de.cismet.cids.server.rest.resourcelistings.ThePermissionsAPIResourceListing
+  class de.cismet.cids.server.rest.resourcelistings.TheSubstcriptionsAPIResourceListing
+  class de.cismet.cids.server.rest.domain.UsersAPI
+  class de.cismet.cids.server.rest.domain.SearchesAPI
+  class de.cismet.cids.server.rest.resourcelistings.TheActionAPIResourceListing
+  class de.cismet.cids.server.rest.domain.ActionAPI
+  class de.cismet.cids.server.rest.domain.ClassesAPI
+  class de.cismet.cids.server.rest.domain.SubscriptionsAPI
+  class de.cismet.cids.server.rest.domain.NodesAPI
+  class de.cismet.cids.server.rest.resourcelistings.TheUserAPIResourceListing
+  class de.cismet.cids.server.rest.resourcelistings.TheEntitiesAPIResourceListing
+Nov 11, 2014 12:02:56 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Provider classes found:
+  class com.fasterxml.jackson.jaxrs.base.JsonMappingExceptionMapper
+  class com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider
+  class com.fasterxml.jackson.jaxrs.base.JsonParseExceptionMapper
+  class de.cismet.cids.server.rest.domain.ServerExceptionMapper$InvalidLevelExceptionMapper
+  class com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider
+  class de.cismet.cids.server.rest.domain.ServerExceptionMapper$InvalidFilterFormatExceptionMapper
+  class com.fasterxml.jackson.jaxrs.json.JsonParseExceptionMapper
+  class com.fasterxml.jackson.jaxrs.json.JsonMappingExceptionMapper
+Nov 11, 2014 12:02:56 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+155159 [912011468@qtp-1312884893-0 - /CRISMA.worldstates?limit=1&offset=0&omitNullValues=true&deduplicate=true] INFO de.cismet.cids.custom.crisma.trigger.OrionContextBrokerTrigger  - Orion Query Broker: connecting to Orion Broker 'crisma-pilotEv1.ait.ac.at:80/orion'
+155172 [912011468@qtp-1312884893-0 - /CRISMA.worldstates?limit=1&offset=0&omitNullValues=true&deduplicate=true] DEBUG de.cismet.cids.custom.crisma.trigger.OrionContextBrokerTrigger  - connected to Orion Query Broker

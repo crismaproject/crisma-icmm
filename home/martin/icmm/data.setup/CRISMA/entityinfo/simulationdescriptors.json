@@ -1,0 +1,83 @@
+{
+  "$self" : "/CRISMA.simulationdescriptors",
+  "configuration" : {
+    "name" : "SimulationDescriptors",
+    "policy" : "STANDARD",
+    "attributePolicy" : "STANDARD",
+    "pK_Field" : "id"
+  },
+  "attributes" : {
+    "id" : {
+      "$self" : "/CRISMA.simulationdescriptors/id",
+      "name" : "id",
+      "position" : 0,
+      "javaclassname" : "java.lang.Integer"
+    },
+    "name" : {
+      "$self" : "/CRISMA.simulationdescriptors/name",
+      "visible" : true,
+      "optional" : true,
+      "name" : "name",
+      "position" : 1,
+      "javaclassname" : "java.lang.String"
+    },
+    "description" : {
+      "$self" : "/CRISMA.simulationdescriptors/description",
+      "visible" : true,
+      "optional" : true,
+      "name" : "description",
+      "position" : 2,
+      "javaclassname" : "java.lang.String"
+    },
+    "categories" : {
+      "$self" : "/CRISMA.simulationdescriptors/categories",
+      "visible" : true,
+      "array" : true,
+      "optional" : true,
+      "name" : "categories",
+      "position" : 3,
+      "referenceType" : "/CRISMA.categories"
+    },
+    "simulationcontrolparameterdescription" : {
+      "$self" : "/CRISMA.simulationdescriptors/simulationcontrolparameterdescription",
+      "visible" : true,
+      "optional" : true,
+      "name" : "simulationControlParameterDescription",
+      "position" : 4,
+      "foreignKey" : true,
+      "referenceType" : "/CRISMA.datadescriptors"
+    },
+    "executioninfocontenttype" : {
+      "$self" : "/CRISMA.simulationdescriptors/executioninfocontenttype",
+      "visible" : true,
+      "optional" : true,
+      "name" : "executionInfoContentType",
+      "position" : 5,
+      "javaclassname" : "java.lang.String"
+    },
+    "executioninfo" : {
+      "$self" : "/CRISMA.simulationdescriptors/executioninfo",
+      "visible" : true,
+      "optional" : true,
+      "name" : "executionInfo",
+      "position" : 6,
+      "javaclassname" : "java.lang.String"
+    },
+    "uiintegrationinfocontenttype" : {
+      "$self" : "/CRISMA.simulationdescriptors/uiintegrationinfocontenttype",
+      "visible" : true,
+      "optional" : true,
+      "name" : "uiIntegrationInfoContentType",
+      "position" : 7,
+      "javaclassname" : "java.lang.String"
+    },
+    "uiintegrationinfo" : {
+      "$self" : "/CRISMA.simulationdescriptors/uiintegrationinfo",
+      "visible" : true,
+      "optional" : true,
+      "name" : "uiIntegrationInfo",
+      "position" : 8,
+      "javaclassname" : "java.lang.String"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$self" : "/CRISMA.url",
+  "configuration" : {
+    "name" : "URL",
+    "policy" : "STANDARD",
+    "attributePolicy" : "STANDARD",
+    "pK_Field" : "id"
+  },
+  "attributes" : {
+    "id" : {
+      "$self" : "/CRISMA.url/id",
+      "visible" : true,
+      "name" : "ID",
+      "position" : 0,
+      "javaclassname" : "java.lang.Integer"
+    },
+    "url_base_id" : {
+      "$self" : "/CRISMA.url/url_base_id",
+      "visible" : true,
+      "name" : "URL_BASE_ID",
+      "position" : 1,
+      "foreignKey" : true,
+      "referenceType" : "/CRISMA.url_base"
+    },
+    "object_name" : {
+      "$self" : "/CRISMA.url/object_name",
+      "visible" : true,
+      "name" : "OBJECT_NAME",
+      "position" : 2,
+      "javaclassname" : "java.lang.String"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$self" : "/CRISMA.categories",
+  "configuration" : {
+    "name" : "Categories",
+    "policy" : "STANDARD",
+    "attributePolicy" : "STANDARD",
+    "pK_Field" : "id"
+  },
+  "attributes" : {
+    "id" : {
+      "$self" : "/CRISMA.categories/id",
+      "name" : "id",
+      "position" : 0,
+      "javaclassname" : "java.lang.Integer"
+    },
+    "key" : {
+      "$self" : "/CRISMA.categories/key",
+      "visible" : true,
+      "name" : "key",
+      "position" : 1,
+      "javaclassname" : "java.lang.String"
+    },
+    "classification" : {
+      "$self" : "/CRISMA.categories/classification",
+      "visible" : true,
+      "optional" : true,
+      "name" : "classification",
+      "position" : 2,
+      "foreignKey" : true,
+      "referenceType" : "/CRISMA.classifications"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export JAVA_HOME=/usr/local/java_sw/jdk1.8.0_05
+./apache-maven-3.0.4/bin/mvn -f pom.xml.v2 -s settings.xml.v2 $* clean package

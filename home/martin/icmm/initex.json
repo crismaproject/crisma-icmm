@@ -1,0 +1,12 @@
+{
+  "$self": "/CRISMA.exercises/1",
+  "alertsRequests": [
+  ],
+  "id": 1,
+  "incidentTime": "2014-06-16T10:05:00.000Z",
+  "location": "SRID=4326;POINT (49.789414 10.029811)",
+  "patients": [
+  ],
+  "tacticalAreas": [
+  ]
+}

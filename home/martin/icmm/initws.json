@@ -1,0 +1,64 @@
+{
+  "$self": "/CRISMA.worldstates/1",
+  "categories": [
+    {
+      "$self": "/CRISMA.categories/10",
+      "classification": {
+        "$self": "/CRISMA.classifications/10",
+        "id": 1,
+        "key": "CAPTURE"
+      },
+      "id": 1,
+      "key": "Exercise"
+    }
+  ],
+  "childworldstates": [],
+  "created": "",
+  "creator": "mscholl",
+  "description": "Init WS",
+  "iccdata": [],
+  "id": 1,
+  "name": "Init WS",
+  "worldstatedata": [
+    {
+      "$self": "/CRISMA.dataitems/1",
+      "actualaccessinfo": "1",
+      "actualaccessinfocontenttype": "text/plain",
+      "categories": [
+        {
+          "$self": "/CRISMA.categories/11",
+          "classification": {
+            "$ref": "/CRISMA.classifications/10"
+          },
+          "id": 11,
+          "key": "exercise_data"
+        }
+      ],
+      "datadescriptor": {
+        "$self": "/CRISMA.datadescriptors/10",
+        "categories": [
+          {
+            "$self": "/CRISMA.categories/12",
+            "classification": {
+              "$ref": "/CRISMA.classifications/10"
+            },
+            "id": 12,
+            "key": "capture_data"
+          }
+        ],
+        "defaultaccessinfo": "https://crisma-pilotEv1.ait.ac.at/icmm_api/CRISMA.exercises/:id?deduplicate=true",
+        "defaultaccessinfocontenttype": "application/json",
+        "description": "Dataslot for exercise data",
+        "id": 10,
+        "name": "exercise_slot"
+      },
+      "description": "Data relevant for the exercise",
+      "id": 1,
+      "lastmodified": "",
+      "name": "Exercise Data",
+      "spatialcoverage": "SRID=4326;POINT (49.789414 10.029811)",
+      "temporalcoveragefrom": "2014-06-16T10:05:00.000Z",
+      "temporalcoverageto": "2014-06-16T10:05:00.000Z"
+    }
+  ]
+}

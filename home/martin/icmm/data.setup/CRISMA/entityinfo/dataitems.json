@@ -1,0 +1,100 @@
+{
+  "$self" : "/CRISMA.dataitems",
+  "configuration" : {
+    "name" : "DataItems",
+    "policy" : "STANDARD",
+    "attributePolicy" : "STANDARD",
+    "pK_Field" : "id"
+  },
+  "attributes" : {
+    "id" : {
+      "$self" : "/CRISMA.dataitems/id",
+      "name" : "id",
+      "position" : 0,
+      "javaclassname" : "java.lang.Integer"
+    },
+    "name" : {
+      "$self" : "/CRISMA.dataitems/name",
+      "visible" : true,
+      "optional" : true,
+      "name" : "name",
+      "position" : 1,
+      "javaclassname" : "java.lang.String"
+    },
+    "description" : {
+      "$self" : "/CRISMA.dataitems/description",
+      "visible" : true,
+      "optional" : true,
+      "name" : "description",
+      "position" : 2,
+      "javaclassname" : "java.lang.String"
+    },
+    "lastmodified" : {
+      "$self" : "/CRISMA.dataitems/lastmodified",
+      "visible" : true,
+      "optional" : true,
+      "name" : "lastModified",
+      "position" : 3,
+      "javaclassname" : "java.sql.Timestamp"
+    },
+    "temporalcoveragefrom" : {
+      "$self" : "/CRISMA.dataitems/temporalcoveragefrom",
+      "visible" : true,
+      "optional" : true,
+      "name" : "temporalCoverageFrom",
+      "position" : 4,
+      "javaclassname" : "java.sql.Timestamp"
+    },
+    "temporalcoverageto" : {
+      "$self" : "/CRISMA.dataitems/temporalcoverageto",
+      "visible" : true,
+      "optional" : true,
+      "name" : "temporalCoverageTo",
+      "position" : 5,
+      "javaclassname" : "java.sql.Timestamp"
+    },
+    "spatialcoverage" : {
+      "$self" : "/CRISMA.dataitems/spatialcoverage",
+      "visible" : true,
+      "optional" : true,
+      "name" : "spatialCoverage",
+      "position" : 6,
+      "foreignKey" : true,
+      "referenceType" : "/CRISMA.geom"
+    },
+    "datadescriptor" : {
+      "$self" : "/CRISMA.dataitems/datadescriptor",
+      "visible" : true,
+      "optional" : true,
+      "name" : "dataDescriptor",
+      "position" : 7,
+      "foreignKey" : true,
+      "referenceType" : "/CRISMA.datadescriptors"
+    },
+    "worldstate" : {
+      "$self" : "/CRISMA.dataitems/worldstate",
+      "visible" : true,
+      "optional" : true,
+      "name" : "worldstate",
+      "position" : 8,
+      "foreignKey" : true,
+      "referenceType" : "/CRISMA.worldstates"
+    },
+    "actualaccessinfocontenttype" : {
+      "$self" : "/CRISMA.dataitems/actualaccessinfocontenttype",
+      "visible" : true,
+      "optional" : true,
+      "name" : "actualAccessInfoContentType",
+      "position" : 9,
+      "javaclassname" : "java.lang.String"
+    },
+    "actualaccessinfo" : {
+      "$self" : "/CRISMA.dataitems/actualaccessinfo",
+      "visible" : true,
+      "optional" : true,
+      "name" : "actualAccessInfo",
+      "position" : 10,
+      "javaclassname" : "java.lang.String"
+    }
+  }
+}

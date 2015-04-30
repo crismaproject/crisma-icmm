@@ -1,0 +1,58 @@
+{
+  "$self" : "/CRISMA.datadescriptors",
+  "configuration" : {
+    "name" : "DataDescriptors",
+    "policy" : "STANDARD",
+    "attributePolicy" : "STANDARD",
+    "pK_Field" : "id"
+  },
+  "attributes" : {
+    "id" : {
+      "$self" : "/CRISMA.datadescriptors/id",
+      "name" : "id",
+      "position" : 0,
+      "javaclassname" : "java.lang.Integer"
+    },
+    "name" : {
+      "$self" : "/CRISMA.datadescriptors/name",
+      "visible" : true,
+      "optional" : true,
+      "name" : "name",
+      "position" : 1,
+      "javaclassname" : "java.lang.String"
+    },
+    "description" : {
+      "$self" : "/CRISMA.datadescriptors/description",
+      "visible" : true,
+      "optional" : true,
+      "name" : "description",
+      "position" : 2,
+      "javaclassname" : "java.lang.String"
+    },
+    "categories" : {
+      "$self" : "/CRISMA.datadescriptors/categories",
+      "visible" : true,
+      "array" : true,
+      "optional" : true,
+      "name" : "categories",
+      "position" : 3,
+      "referenceType" : "/CRISMA.categories"
+    },
+    "defaultaccessinfocontenttype" : {
+      "$self" : "/CRISMA.datadescriptors/defaultaccessinfocontenttype",
+      "visible" : true,
+      "optional" : true,
+      "name" : "defaultAccessInfoContentType",
+      "position" : 4,
+      "javaclassname" : "java.lang.String"
+    },
+    "defaultaccessinfo" : {
+      "$self" : "/CRISMA.datadescriptors/defaultaccessinfo",
+      "visible" : true,
+      "optional" : true,
+      "name" : "defaultAccessInfo",
+      "position" : 5,
+      "javaclassname" : "java.lang.String"
+    }
+  }
+}

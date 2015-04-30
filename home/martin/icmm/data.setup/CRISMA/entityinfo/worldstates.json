@@ -1,0 +1,103 @@
+{
+  "$self" : "/CRISMA.worldstates",
+  "configuration" : {
+    "name" : "Worldstates",
+    "policy" : "STANDARD",
+    "attributePolicy" : "STANDARD",
+    "pK_Field" : "id"
+  },
+  "attributes" : {
+    "id" : {
+      "$self" : "/CRISMA.worldstates/id",
+      "name" : "id",
+      "position" : 0,
+      "javaclassname" : "java.lang.Integer"
+    },
+    "name" : {
+      "$self" : "/CRISMA.worldstates/name",
+      "visible" : true,
+      "optional" : true,
+      "name" : "name",
+      "position" : 1,
+      "javaclassname" : "java.lang.String"
+    },
+    "description" : {
+      "$self" : "/CRISMA.worldstates/description",
+      "visible" : true,
+      "optional" : true,
+      "name" : "description",
+      "position" : 2,
+      "javaclassname" : "java.lang.String"
+    },
+    "categories" : {
+      "$self" : "/CRISMA.worldstates/categories",
+      "visible" : true,
+      "array" : true,
+      "optional" : true,
+      "name" : "categories",
+      "position" : 3,
+      "referenceType" : "/CRISMA.categories"
+    },
+    "creator" : {
+      "$self" : "/CRISMA.worldstates/creator",
+      "visible" : true,
+      "optional" : true,
+      "name" : "creator",
+      "position" : 5,
+      "javaclassname" : "java.lang.String"
+    },
+    "created" : {
+      "$self" : "/CRISMA.worldstates/created",
+      "visible" : true,
+      "optional" : true,
+      "name" : "created",
+      "position" : 6,
+      "javaclassname" : "java.sql.Timestamp"
+    },
+    "origintransition" : {
+      "$self" : "/CRISMA.worldstates/origintransition",
+      "visible" : true,
+      "optional" : true,
+      "name" : "originTransition",
+      "position" : 8,
+      "foreignKey" : true,
+      "referenceType" : "/CRISMA.transitions"
+    },
+    "parentworldstate" : {
+      "$self" : "/CRISMA.worldstates/parentworldstate",
+      "visible" : true,
+      "optional" : true,
+      "name" : "parentWorldstate",
+      "position" : 9,
+      "foreignKey" : true,
+      "referenceType" : "/CRISMA.worldstates"
+    },
+    "worldstatedata" : {
+      "$self" : "/CRISMA.worldstates/worldstatedata",
+      "visible" : true,
+      "optional" : true,
+      "name" : "worldstateData",
+      "position" : 12,
+      "array" : true,
+      "referenceType" : "/CRISMA.dataitems"
+    },
+    "iccdata" : {
+      "$self" : "/CRISMA.worldstates/iccdata",
+      "visible" : true,
+      "optional" : true,
+      "name" : "iccData",
+      "position" : 13,
+      "foreignKey" : true,
+      "referenceType" : "/CRISMA.dataitems"
+    },
+    "childworldstates" : {
+      "$self" : "/CRISMA.worldstates/childworldstates",
+      "visible" : true,
+      "optional" : true,
+      "name" : "childWorldstates",
+      "position" : 14,
+      "array" : true,
+      "referenceType" : "/CRISMA.worldstates"
+    }
+  }
+}

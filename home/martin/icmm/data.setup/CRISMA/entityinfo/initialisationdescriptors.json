@@ -1,0 +1,58 @@
+{
+  "$self" : "/CRISMA.initialisationdescriptors",
+  "configuration" : {
+    "name" : "InitialisationDescriptors",
+    "policy" : "STANDARD",
+    "attributePolicy" : "STANDARD",
+    "pK_Field" : "id"
+  },
+  "attributes" : {
+    "id" : {
+      "$self" : "/CRISMA.initialisationdescriptors/id",
+      "name" : "id",
+      "position" : 0,
+      "javaclassname" : "java.lang.Integer"
+    },
+    "name" : {
+      "$self" : "/CRISMA.initialisationdescriptors/name",
+      "visible" : true,
+      "optional" : true,
+      "name" : "name",
+      "position" : 2,
+      "javaclassname" : "java.lang.String"
+    },
+    "description" : {
+      "$self" : "/CRISMA.initialisationdescriptors/description",
+      "visible" : true,
+      "optional" : true,
+      "name" : "description",
+      "position" : 3,
+      "javaclassname" : "java.lang.String"
+    },
+    "categories" : {
+      "$self" : "/CRISMA.initialisationdescriptors/categories",
+      "visible" : true,
+      "array" : true,
+      "optional" : true,
+      "name" : "categories",
+      "position" : 4,
+      "referenceType" : "/CRISMA.categories"
+    },
+    "uiintegrationinfocontenttype" : {
+      "$self" : "/CRISMA.initialisationdescriptors/uiintegrationinfocontenttype",
+      "visible" : true,
+      "optional" : true,
+      "name" : "uiIntegrationInfoContentType",
+      "position" : 5,
+      "javaclassname" : "java.lang.String"
+    },
+    "uiintegrationinfo" : {
+      "$self" : "/CRISMA.initialisationdescriptors/uiintegrationinfo",
+      "visible" : true,
+      "optional" : true,
+      "name" : "uiIntegrationInfo",
+      "position" : 6,
+      "javaclassname" : "java.lang.String"
+    }
+  }
+}

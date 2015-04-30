@@ -1,0 +1,27 @@
+{
+  "$self" : "/CRISMA.geom",
+  "configuration" : {
+    "name" : "GEOM",
+    "policy" : "STANDARD",
+    "attributePolicy" : "STANDARD",
+    "pK_Field" : "id",
+    "indexed" : true
+  },
+  "attributes" : {
+    "id" : {
+      "$self" : "/CRISMA.geom/id",
+      "visible" : true,
+      "name" : "ID",
+      "position" : 0,
+      "javaclassname" : "java.lang.Integer"
+    },
+    "geo_field" : {
+      "$self" : "/CRISMA.geom/geo_field",
+      "visible" : true,
+      "optional" : true,
+      "name" : "GEO_STRING",
+      "position" : 1,
+      "javaclassname" : "com.vividsolutions.jts.geom.Geometry"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "$self" : "/CRISMA.renderingdescriptors",
+  "configuration" : {
+    "name" : "RenderingDescriptors",
+    "policy" : "STANDARD",
+    "attributePolicy" : "STANDARD",
+    "pK_Field" : "id"
+  },
+  "attributes" : {
+    "id" : {
+      "$self" : "/CRISMA.renderingdescriptors/id",
+      "name" : "id",
+      "position" : 0,
+      "javaclassname" : "java.lang.Integer"
+    },
+    "name" : {
+      "$self" : "/CRISMA.renderingdescriptors/name",
+      "visible" : true,
+      "optional" : true,
+      "name" : "name",
+      "position" : 1,
+      "javaclassname" : "java.lang.String"
+    },
+    "description" : {
+      "$self" : "/CRISMA.renderingdescriptors/description",
+      "visible" : true,
+      "optional" : true,
+      "name" : "description",
+      "position" : 2,
+      "javaclassname" : "java.lang.String"
+    },
+    "categories" : {
+      "$self" : "/CRISMA.renderingdescriptors/categories",
+      "visible" : true,
+      "array" : true,
+      "optional" : true,
+      "name" : "categories",
+      "position" : 3,
+      "referenceType" : "/CRISMA.categories"
+    },
+    "uiintegrationinfocontenttype" : {
+      "$self" : "/CRISMA.renderingdescriptors/uiintegrationinfocontenttype",
+      "visible" : true,
+      "optional" : true,
+      "name" : "uiIntegrationInfoContentType",
+      "position" : 4,
+      "javaclassname" : "java.lang.String"
+    },
+    "uiintegrationinfo" : {
+      "$self" : "/CRISMA.renderingdescriptors/uiintegrationinfo",
+      "visible" : true,
+      "optional" : true,
+      "name" : "uiIntegrationInfo",
+      "position" : 5,
+      "javaclassname" : "java.lang.String"
+    }
+  }
+}

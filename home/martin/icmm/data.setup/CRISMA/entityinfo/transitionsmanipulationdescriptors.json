@@ -1,0 +1,34 @@
+{
+  "$self" : "/CRISMA.transitionsmanipulationdescriptors",
+  "configuration" : {
+    "name" : "transitionsmanipulationdescriptors",
+    "policy" : "STANDARD",
+    "attributePolicy" : "STANDARD",
+    "pK_Field" : "ID"
+  },
+  "attributes" : {
+    "ID" : {
+      "$self" : "/CRISMA.transitionsmanipulationdescriptors/ID",
+      "name" : "id",
+      "position" : 0,
+      "javaclassname" : "java.lang.Integer"
+    },
+    "transitions_reference" : {
+      "$self" : "/CRISMA.transitionsmanipulationdescriptors/transitions_reference",
+      "visible" : true,
+      "optional" : true,
+      "name" : "transitions_reference",
+      "position" : 1,
+      "javaclassname" : "java.lang.Integer"
+    },
+    "manipulationdescriptors" : {
+      "$self" : "/CRISMA.transitionsmanipulationdescriptors/manipulationdescriptors",
+      "visible" : true,
+      "optional" : true,
+      "name" : "manipulationdescriptors",
+      "position" : 2,
+      "foreignKey" : true,
+      "referenceType" : "/CRISMA.manipulationdescriptors"
+    }
+  }
+}
